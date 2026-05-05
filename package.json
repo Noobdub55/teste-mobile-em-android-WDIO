@@ -1,0 +1,35 @@
+{
+  "name": "teste-mobile-em-android-wdio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noobdub55/teste-mobile-em-android-WDIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noobdub55/teste-mobile-em-android-WDIO/issues"
+  },
+  "homepage": "https://github.com/Noobdub55/teste-mobile-em-android-WDIO#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@wdio/appium-service": "^9.27.1",
+    "@wdio/cli": "^9.27.1",
+    "@wdio/globals": "^9.27.1",
+    "@wdio/local-runner": "^9.27.1",
+    "@wdio/mocha-framework": "^9.27.1",
+    "@wdio/spec-reporter": "^9.27.1",
+    "@wdio/visual-service": "^9.2.2",
+    "appium-uiautomator2-driver": "^7.2.0",
+    "expect-webdriverio": "^5.6.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
