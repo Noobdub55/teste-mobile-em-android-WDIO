@@ -22,8 +22,11 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
+      - name: Dar permissão ao WDIO
+        run: chmod +x ./node_modules/.bin/wdio
+
       - name: Rodar testes mobile
         env:
           SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
           SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-        run: npx wdio run ./wdio.conf.ts
+        run: ./node_modules/.bin/wdio run ./wdio.conf.ts
