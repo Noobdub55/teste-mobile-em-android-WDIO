@@ -1,8 +1,8 @@
 export const config: WebdriverIO.Config = {
   runner: 'local',
 
-  user: 'oauth-apanhador.livros-6332c',
-  key: '360722c3-a881-464e-a44e-bad3fd9d8a77',
+  user: process.env.SAUCE_USERNAME,
+  key: process.env.SAUCE_ACCESS_KEY,
 
   hostname: 'ondemand.us-west-1.saucelabs.com',
   port: 443,
